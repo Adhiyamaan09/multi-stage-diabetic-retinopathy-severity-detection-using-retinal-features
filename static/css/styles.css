@@ -1,0 +1,102 @@
+html {
+    background-image: url("../images/eye_background.jpg");
+    background-size: 100% 155%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin-left: 10%;
+    padding: 0;
+}
+
+header {
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#testbutton {
+    color: white;
+    padding: 10px 15px;
+    background-color: rgb(19, 118, 218);
+    float: right;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+#uploadbox {
+    background-color: green;
+    padding: 2%;
+}
+
+#resultclass, #resultaccuracy {
+    margin-left: 10%;
+    text-align: left;
+    color: royalblue;
+}
+
+#resultbox {
+    background-color: white;
+}
+
+#graphviewButton {
+    color: blue;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin-left: 10%;
+}
+
+#tryagainButton {
+    color: blue;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin-left: 10%;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}

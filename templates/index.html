@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetic Retinopathy</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Diabetic Retinopathy</h1>
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="column" id="uploadbox">
+                <h2>Upload Image below</h2>
+
+                <br>
+
+                <input id="imageinput" type="file" name="image" onchange="readURL(this)"/>
+                <button id="testbutton">TEST <i class="fa fa-cloud-upload"></i></button>
+            </div>
+
+            <div class="column" id="resultbox" style="display: none;">
+                <h2 id="resultclass"></h2>
+                <h2 id="resultaccuracy"></h2>
+
+                <button id="graphviewButton">View Graph <i class="fa fa-angle-down"></i></button>
+                <button id="tryagainButton">Try again <i class="fa fa-refresh"></i></button>
+
+                <div class="hide" id="graphcontainer">
+                    <img id="predgraphimage" src="" />
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+            <div class="column center">
+                <img id="retinaimage" src="" />
+                <h2>Retina Image</h2>
+            </div>
+                
+            <div class="column">
+                <img id="exudateimage" src="" />
+                <h2>Exudates Image</h2>
+            </div>
+
+            <div class="column">
+                <img id="vesselimage" src="" />
+                <h2>Vessels Image</h2>
+            </div>
+        </div>
+    </main>
+
+    <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
+</body>
+
+</html>
